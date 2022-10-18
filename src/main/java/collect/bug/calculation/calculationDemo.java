@@ -30,10 +30,10 @@ public class calculationDemo {
      *
      * 1、Amount calculation using double or float types is not allowed.
      * 2、The amount is stored in the smallest currency unit, integer type.
-     * 3、BigDecimal is required for floating-point operations and for dividing amounts.
+     * 3、BigDecimal is required for floating-point operations and dividing amounts.
      * 4、For complex amount calculation scenarios, a check mechanism is required.
      * 5、In the external interface, long type is used to represent the amount or balance field, floating point is not allowed.
-     * 6、The amount calculation logic should be converged on the back-end and not allowed to be implemented on the front-end.
+     * 6、The amount calculation logic should be converged on the back end and not allowed to be implemented on the front end.
      *
      */
 }
