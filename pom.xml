@@ -8,5 +8,13 @@
     <artifactId>bug-collect</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.jetbrains.kotlin</groupId>
+            <artifactId>kotlin-test-junit5</artifactId>
+            <version>1.7.20</version>
+        </dependency>
+    </dependencies>
+
 
 </project>

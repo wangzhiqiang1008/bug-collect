@@ -7,6 +7,7 @@ package collect.bug.npe;
  */
 
 public class NpeDemo {
+
     public static void main(String[] args) {
         npeDemo1();
     }
@@ -18,7 +19,7 @@ public class NpeDemo {
      * or analysis has shown that it will always be dereferenced.
      */
     private static void npeDemo1() {
-
+        System.out.print("11111");
     }
 
 }
