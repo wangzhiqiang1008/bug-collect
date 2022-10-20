@@ -23,6 +23,14 @@ public class calculationDemo {
         System.out.println(new BigDecimal("1.015").multiply(new BigDecimal("100"))); // 101.500
     }
 
+    /**
+     * There was multiple rounding during the calculation, resulting in incorrect final results.
+     *
+     * Example: When calculating multiple fees or taxes, you need to round up each one and add up the total cost,
+     * not the total, and then round down to get the total cost.
+     *
+     */
+
 
     /**
      *

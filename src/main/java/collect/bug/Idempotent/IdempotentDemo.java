@@ -6,6 +6,35 @@ package collect.bug.Idempotent;
  */
 public class IdempotentDemo {
 
+    /**
+     * Demo 1:
+     * Under the same business, the upstream call to pay the first debit of 100 was successful, due to the number
+     * generation problems leading to another use of the same single number debit of 500, at this time the upstream
+     * business got the same single number two requests for business parameters inconsistent error code, will be
+     * considered in processing, and then the call to check the bill will return the first successful results, at
+     * this time the capital loss occurred.
+     */
+
+    /**
+     * Demo 2:
+     * The transaction generates an idempotent order number to inert the business record while requesting the remote
+     * idempotent interface. When the remote idempotent interface call times out but the actual interface server has
+     * succeeded, the local transaction is rolled back causing a loss of capital.
+     */
+    public void  Demo() {
+        // DataSourceTransactions.trx(payShard, tpl -> {        // 1. Generated idempotent order number in buildRecord
+
+            // TransferKsCoinRecord record = buildRecord();
+            // transferKsCoinRecordDAO.insertInTrx(tpl, record); // 2. insert DB
+            //  TransferResponse response = TransferKcCoinClient.transfer(buildTransferRequest(record));  // 3. payment
+            // 4. update result
+
+        // });
+    }
+        // When a timeout occurs in step 3, the entire transaction is rolled back, but the downstream may have been executed to payment as a success
+
+
+
 
     /**
      *  follow the rules
