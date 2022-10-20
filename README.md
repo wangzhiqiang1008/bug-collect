@@ -12,7 +12,7 @@ Consequences: direct or indirect financial loss to the company or its customers.
 
 The error code processing logic is most commonly used for interfacing with three-party channels (Paypal, Alipay, etc.) and for cross-system interface calls.
 
-Usually, the client will map the error code returned by the server to three states: success, processing, and failure. When there is an error in this mapping logic or incorrect processing logic for the outstanding states, it may directly lead to a loss of capital.
+Usually, the client will map the error code returned by the server to three states: success, processing, and fail. When there is an error in this mapping logic or incorrect processing logic for the outstanding states, it may directly lead to a loss of capital.
 
 ### 2、Idempotent check 
 

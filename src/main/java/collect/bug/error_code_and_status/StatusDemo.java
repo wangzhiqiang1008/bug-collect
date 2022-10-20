@@ -1,4 +1,4 @@
-package collect.bug.status;
+package collect.bug.error_code_and_status;
 
 /**
  * @author wzq

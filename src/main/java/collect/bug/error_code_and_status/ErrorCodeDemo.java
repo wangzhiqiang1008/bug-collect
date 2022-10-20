@@ -1,4 +1,4 @@
-package collect.bug.error_code;
+package collect.bug.error_code_and_status;
 
 /**
  * @author wzq
@@ -33,9 +33,8 @@ public class ErrorCodeDemo {
      * 4、The error code processing logic needs to be compatible with the addition of new error codes (considered to be
      * in process) and the monitoring and alerting mechanism needs to be used to detect such cases and ensure that
      * they can be followed up in a timely manner.
-     *
-     *
      */
+
     public static void  dealRequestCode(){
 
         //follow the rules   Pseudocode
